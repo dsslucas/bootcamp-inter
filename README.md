@@ -5,7 +5,6 @@ Neste repositório, está armazenado todos os arquivos armazenados localmente em
 - Certificados
 - Linhas de código em HTML5, CSS3, Portugol, JavaScript e ReactJS
 - Dentre outros
-- Teste
 
 ## Contato
 [LinkedIn](https://www.linkedin.com/in/lucas-silva-souza/)
