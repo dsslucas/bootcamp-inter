@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro site!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="img-perfil.jpg" alt="Foto de perfil" style="width: 300px">
-        <h1>Meu primeiro site com HTML5!</h1>
+        <img src="img-perfil.jpg" alt="Foto de perfil" style="width: 300px" class="photo">
+        <h1 id="title">Meu primeiro site com HTML5!</h1>
         <h2>Lucas Souza</h2>
     </header>
 
     <section>
         <header>
-            <h2>Seção de Postagens</h2>
+            <h2 class="subtitle">Seção de Postagens</h2>
         </header>
 
-        <article>
+        <article class="post">
             <header>
-                <img src="img-post.png" alt="Primeira postagem" width="500px">
-                <h3>Post #01</h3>
+                <img src="img-post.png" alt="Primeira postagem" width="800px" class="post_image">
+                <h3 class="post-title">Post #01</h3>
             </header>
 
-            <p>
+            <p class="post_content">
                 Lorem ipsum dolor sit amet <a href="https://youtube.com" target="_blank">consectetur adipisicing elit</a>. Ipsum, repudiandae praesentium. Molestias nam asperiores sequi hic corporis odio voluptates adipisci, ipsam quia fugit, illum, ab totam vero error cum iure!
             </p>
         </article>
     </section>
 
     <footer>
-        <ul>
+        <ul class="contacts_list">
             <li><a href="mailto:lucasdasilvasou@gmail.cm">lucasdasilvasou@gmail.com</a></li>
             <li><a href="https://www.linkedin.com/in/lucas-silva-souza/">LinkedIn</a></li>
             <li><a href="https://github.com/lucassilvasouza">GitHub</a></li>
