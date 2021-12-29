@@ -9,6 +9,7 @@
 - JavaScript 
 - Font Awesome
 - J Query e Own Carrousel (para os outros filmes)
+- Extensão Live Server (para execução do HTML, instalado dentro da IDE Visual Studio Code)
 
 ### Alterações realizadas em comparação ao projeto original:
 - Alteração na responsividade (aparecer mais filmes em telas específicas)
@@ -21,3 +22,7 @@
 - Adição de mais itens no rodapé
 - Dar vida utilizando os conceitos de Single Page Application do ReactJS
 - Elaborar uma aplicação simples de backend
+
+### Observações:
+- Versão inicial, servindo com base para outros projetos
+- Não é necessário ter um package.json mas é recomendável em aplicações complexas (envolvendo ReactJS, por exemplo)
