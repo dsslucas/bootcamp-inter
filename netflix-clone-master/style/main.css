@@ -1,0 +1,149 @@
+/*Declaração de variáveis no CSS, para manter fixado */
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*A base de tudo do site*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+/*Elementos gerais */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*Ninguem ultrapassa na borda da caixa*/
+}
+
+/* Formatação do container apenas no Header */
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* Logo da Netflix */
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+/* Específico para as navegações <a> */
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+/* Envolve <a> mas quando tiver com o mouse em cima */
+header nav a:hover{
+    color:#fff;
+}
+
+/* Destaque do filme principal */
+.filme-principal{
+    font-size:16px;
+
+    /* Gradiente de cores, permitindo escurecer a imagem sem necessitar de edição externa */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../img/capa-house.jpg');
+
+    height:400px;
+
+    /* Permite enquadrar a imagem com a tela */    
+    background-size:cover; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Descrição do filme principal */
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+/* Titulo do filme principal */
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Botão do menu principal, bem como outros */
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    /* Muda o cursor do mouse para algo clicável */
+    cursor: pointer;
+
+    /* Efeito de transição suave para o hover */
+    transition: .3s ease all;
+}
+
+/* Inversor pro botão */
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+/* Font Awesome */
+.botao i{
+    margin-right: 8px;
+}
+
+/* A partir daqui, configurações do Wrapper */
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
