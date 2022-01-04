@@ -1,7 +1,7 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+introducao-react/node_modules
+introducao-react-webpack/node_modules
 instalacoes
-
 exercicios-portunhol
-
-workspace-git
-
-aula-bootstrap/bootstrap/js
