@@ -1,0 +1,33 @@
+body{
+    background-color: #ed405e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.App{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 5px;
+    padding: 50px;
+
+}
+
+div #noState{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+div #noState button{
+    margin-right: 10px;
+    margin-left: 10px
+}
