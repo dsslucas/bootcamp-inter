@@ -1,0 +1,19 @@
+/* Visit https://aka.ms/tsconfig.json to read more about this file */
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "moduleResolution": "node", //Forma como vai resolver os problemas
+    "rootDir": "src", //Roteia a partir da pasta SRC
+    "typeRoots": [ //Aonde vai encontrar os arquivos de definição do TypeScript
+      "./src/@types",
+      "./node_modules/@types"
+    ],
+    "outDir": "./dist", //Arquivos principais JavaScript
+    "removeComments": true,
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, //Para fazer validações
+    "skipLibCheck": true
+  }
+}
