@@ -11,8 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Configurações de Rotas
-app.use(statusRoute);
-app.use(usersRoute);
+app.use(statusRoute); //Rota de STATUS
+app.use(usersRoute); //Rota de USERS
 
 // Configuração dos Handlers de Erro
 app.use(errorHandler);

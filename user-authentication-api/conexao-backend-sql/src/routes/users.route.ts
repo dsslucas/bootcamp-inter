@@ -5,6 +5,8 @@ import userRepository from '../repositories/user.repository';
 
 const usersRoute = Router();
 
+//Equivalente ao criado pelo Backend, mas com uso de try/catch e await para a consulta com o BD
+
 usersRoute.get('/users', async (req: Request, res: Response, next: NextFunction) => {
     const users = await userRepository.findAllUsers();
     res.status(StatusCodes.OK).send(users);
