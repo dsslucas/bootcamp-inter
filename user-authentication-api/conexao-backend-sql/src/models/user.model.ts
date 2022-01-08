@@ -1,3 +1,5 @@
+//Modelo de Usuário, importante para o BD
+//? É OPCIONAL
 
 type User = {
     uuid?: string;
