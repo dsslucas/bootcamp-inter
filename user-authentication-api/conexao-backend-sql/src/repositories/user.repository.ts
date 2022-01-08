@@ -23,6 +23,8 @@ class UserRepository {
 
     //Permite encontrar por ID
     async findById(uuid: string): Promise<User> {
+
+        //Tentativa e erro, para tratar possíveis erros
         try {
             //Código SQL
             const query = `

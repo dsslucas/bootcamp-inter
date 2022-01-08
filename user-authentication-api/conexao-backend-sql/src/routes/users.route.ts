@@ -14,6 +14,7 @@ usersRoute.get('/users', async (req: Request, res: Response, next: NextFunction)
 
 //Consulta GET via ID
 usersRoute.get('/users/:uuid', async (req: Request<{ uuid: string }>, res: Response, next: NextFunction) => {
+    //Método para tratamento de erros
     try {
         const uuid = req.params.uuid;
         const user = await userRepository.findById(uuid);

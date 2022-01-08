@@ -1,3 +1,4 @@
+//Modelo de erro
 
 class DatabaseError extends Error {
 
