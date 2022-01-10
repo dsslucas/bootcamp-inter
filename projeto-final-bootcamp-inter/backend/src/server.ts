@@ -8,6 +8,7 @@ import "./database";
 
 const app = express();
 
+//Cross Origin
 app.use(cors());
 
 app.use(express.json());

@@ -10,10 +10,12 @@ class CreateMessageService {
     async execute({email, message}: IMessage){
         const messageRepository = getCustomRepository(MessagesRepository);
 
+        //Não retornou email
         if(!email){
             throw new Error("Por favor informe um email!")
         }
 
+        //Não retornou uma mensagem
         if(!message){
             throw new Error("Por favor escreva uma messagem!")
         }

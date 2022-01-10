@@ -3,7 +3,11 @@ import { Grid, Button, TextField } from '@material-ui/core/';
 
 const Contatos = () => {
 
+    //Link de acesso para a API.
+    //ATENÇÃO: DEVE STARTAR O BACKEND!
     const url = 'http://localhost:5000/message'
+
+    //Estados estabelecidos para a aplicação
     const [message, setMessage] = useState([]);
     const [author, setAuthor] = useState('');
     const [content, setContent] = useState('');
@@ -11,22 +15,29 @@ const Contatos = () => {
     const [render, setRender] = useState(false);
     const [success, setSuccess] = useState(false);
 
+    //Efeito que trabalha sobre uma função assíncrona
     useEffect(async () => {
         const response = await fetch(url)
         const data = await response.json();
         setMessage(data);
     }, [render])
+    //Monitora a consulta. Entra em ação apenas quando há alteração.
 
     const sendMessage = () => {
         setValidator(false);
+
+        //Caso não tneha mensagem. Vai pedir para preencher os campos do formulário
         if(author.length <= 0 || content.length <= 0){
             return setValidator(!validator)
         }
+
+        //Corpo da requisição
         const bodyForm = {
             email: author,
             message: content,
         }
 
+        //Consome a API
         fetch(url, {
             method: "POST",
             headers: {
@@ -34,7 +45,10 @@ const Contatos = () => {
             },
             body: JSON.stringify(bodyForm)
         })
+        //"Depois que fez, confere se tá certo"
         .then((response) => response.json())
+
+        //"Depois que terminar, confirmar os dados"
         .then((data) => {
             if(data.id) {
                 setRender(true);
