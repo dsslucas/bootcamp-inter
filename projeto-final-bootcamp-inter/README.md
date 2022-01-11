@@ -1,6 +1,6 @@
 # Projeto final do Bootcamp Frontend do Banco Inter 📙
 
-Elaborado por Nathally Souza, pela Digital Inovation One
+Elaborado por [Nathally Souza](https://github.com/nathyts), pela Digital Inovation One
 
 ### Tecnologias utilizadas
 - HTML5
