@@ -6,6 +6,7 @@ Elaborado por Nathally Souza, pela Digital Inovation One
 - HTML5
 - CSS3
 - JavaScript
+- React.js
 - TypeScript
 - TypeORM
 
